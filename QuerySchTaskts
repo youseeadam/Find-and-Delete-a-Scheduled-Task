@@ -1,0 +1,1 @@
+for /f "Tokens=2 delims=\" %a in ('schtasks /query /FO:List ^|findstr MyTaskName) do schtasks /delete /f /tn "%a"
